@@ -44,5 +44,11 @@
 			</plugin>
 		</plugins>
 	</build>
-		
+		<distributionManagement>
+    <repository>
+      <id>deployment</id>
+      <name>snapshot</name>
+      <url>http://54.197.35.106:8081/repository/maven-snapshots//</url>
+    </repository>
+  </distributionManagement>
 </project>
