@@ -2,7 +2,7 @@ pipeline {
     agent any
      tools {
         // Install the Maven version configured as "M3" and add it to the path.
-        maven "3.9.5"
+       maven "Maven-3.9.5"
     }
     stages {
         stage (git_clone) {
@@ -14,6 +14,7 @@ pipeline {
             steps{
             sh 'mvn clean complie'
             }
+        }
         stage (Test_packge){
             steps{
                 sh 'mvn test'
@@ -28,4 +29,3 @@ pipeline {
         }
     }
 
-}
