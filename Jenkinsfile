@@ -12,7 +12,7 @@ pipeline {
         }
         stage (Compile_packge){
             steps{
-            sh 'mvn clean complie'
+            sh 'mvn clean compile'
             }
         }
         stage (Test_packge){
