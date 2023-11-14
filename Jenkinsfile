@@ -25,7 +25,11 @@ pipeline {
                 sh 'mvn package'
             }
         }
-        
+        stage(nexus_push_warfile){
+            steps{
+                sh 'mvn deploy'
+            }
+        }
         }
     }
 
